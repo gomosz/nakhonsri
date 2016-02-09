@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+
+  <title>ประเพณีให้ทานไฟ</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link href="../css/modern-business.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin' rel='stylesheet' type='text/css'>
+  <style>
+  @font-face {
+  font-family: 'Kanit', sans-serif;
+  src: url(sansation_light.woff);
+  font-size: '16px';
+  font-weight: bold;
+  }
+
+  div {
+  font-family: 'Kanit', sans-serif;
+  }
+  </style>
+
+  <!-- map -->
+  <link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.13/esri/css/esri.css">
+  <link rel="stylesheet" type="text/css" href="http://esri.github.io/bootstrap-map-js/src/css/bootstrapmap.css">
+  <style type="text/css">
+    #mapDiv {
+      min-height: 100px;
+      max-height: 1000px;
+    }
+  </style>
+</head>
+
+
+  <body>
+
+        <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="../index.html">หน้าหลัก</a>
+                    </li>
+                    <li>
+                        <a href="../history">ข้อมูลทั่วไป</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">สถานที่ท่องเที่ยว <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                              <a href="../kiri">หมู่บ้านคีรีวงศ์</a>
+                          </li>
+                          <li>
+                              <a href="../kwengpow">อ่าวแขวงเภา</a>
+                          </li>
+                          <li>
+                              <a href="../chongruuled">ช่องรูเล็ด</a>
+                          </li>
+                          <li>
+                              <a href="../gohphee">เกาะผี</a>
+                          </li>
+                          <li>
+                              <a href="../gohtarai">เกาะท่าไร่</a>
+                            </li>
+                          <li>
+                              <a href="../hadhinngam">หาดหินงาม</a>
+                          </li>
+                          <li>
+                              <a href="../hadkorkow">หาดคอเขา</a>
+                          </li>
+                          <li>
+                              <a href="../hadnaiprow">หาดในเพลา</a>
+                          </li>
+                           <li>
+                              <a href="../hadnahdan">หาดหน้าด่าน</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">เทศกาล | ประเพณี<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../vuachon">กีฬา วัวชน</a>
+                            </li>
+                            <li>
+                                <a href="../lakpra">ประเภณี ลากพระ</a>
+                            </li>
+                            <li>
+                                <a href="../suddan">ประเภณี สวดด้าน</a>
+                            </li>
+                            <li>
+                                <a href="../hepra">ประเภณีแห่ผ้าขึ้นธาตุ</a>
+                            </li>
+                            <li>
+                                <a href="../sard">วันสารทเดือนสิบ</a>
+                            </li>
+                            <li>
+                                <a href="../haitan">ประเพณีให้ทานไฟ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../hotel">ที่พัก</a>
+                    </li>                    
+                    <li>
+                        <a href="../gallary">แกลลอรี่</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+        <div class="container">
+<!-- Page Heading/Breadcrumbs -->
+  <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">ประเพณีให้ทานไฟ
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="../index.html">หน้าหลัก</a>
+                    </li>
+                    <li class="active">ประเพณีให้ทานไฟ</li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Content Row -->
+        <div class="row">
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-11">
+
+                <!-- Blog Post -->
+
+              <center>  <!-- Preview Image -->
+                <img class="img-responsive img-center" src="/A/img/fes6.jpg" alt="" />
+              </center>
+
+
+
+                <hr />
+
+                <!-- Post Content -->
+                <p class="lead">ประเพณีให้ทานไฟ</p>
+                <p class="lead">ความเป็นมา</p>
+                <p>ประวัติความเป็นมาของประเพณีให้ทานไฟ กล่าวถึงในขุนทกนิกายชาดก เรื่อง ความตระหนี่ถี่เหนียวของโกลิยะเศรษฐี ที่อยากกินขนมเบื้อง แต่เสียดายเงินไม่ยอมซื้อและไม่อยากให้ลูกเมียได้กินด้วย ภรรยาจึงทำขนมเบื้องที่บ้านชั้นเจ็ดให้เศรษฐีได้รับประทานโดยไม่ให้ผู้ใดเห็น ขณะที่สองสามีภรรยากำลังปรุงขนมเบื้อง พระพุทธเจ้าประทับอยู่ที่เชตวันมหาวิหาร ทรงทราบด้วยญาณ จึงโปรดให้พระโมคคัลลานะไปแก้นิสัยของโกลิยะเศรษฐี พระโมคคัคลานะตรงไปบนตึกชั้นเจ็ดของคฤหาสน์เศรษฐี เศรษฐีเข้าใจว่าจะมาขอขนม จึงแสดงอาการรังเกียจและออกวาจาขับไล่ แต่พระโมคคัคลานะพยายามทรมานเศรษฐีอยู่นานจนยอมละนิสัยตระหนี่ พระโมคคัลลานะได้แสดงธรรมเรื่องประโยชน์ของการให้ จนโกลิยะเศรษฐีและภรรยาเกิดความเลื่อมใส ได้นิมนต์มารับถวายอาหารที่บ้านตน พระโมคคัลลานะแจ้งให้นำไปถวายพระพุทธเจ้าและพระสาวก ๕๐๐ รูป ณ เชตวันมหาวิหาร โกลิยะเศรษฐีและภรรบาได้นำเข้าของเครื่องปรุงไปทำขนมเบื้องถวายพระพุทธเจ้าและพระสาวก แต่ปรุงเท่าไหร่แป้งที่เตรียมมาเพียงเล็กน้อยก็ไม่หมด พระพุทธเจ้าจึงโปรดเทศนาสั่งสอน ทั้งสองคนเกิดความปีติอิ่มเอิบในการบริจาคทาน เห็นแจ้งบรรลุธรรมชั้นโสดาบัน
+
+                จังหวัดนครศรีธรรมราชตั้งอยู่ติดชายฝั่งทะเล ลักษณะภูมิอากาศเป็นแบบร้อนชื้น ในหน้าหนาวก็ไม่หนาวจัด เพียงแต่คนรู้สึกว่าอากาศเย็นลงกว่าปกติ เนื่องจากไม่เคยชินกับอากาศที่หนาวเย็นลง ตอนย่ำรุ่งเช้ามืดจึงลุกขึ้นมาก่อไฟผิงเพื่อสร้างความอบอุ่น ประกอบกับชาวนครศรีธรรมราชยึดมั่นในพระพุทธศาสนา พุทธศาสนิกชนจึงพากันก่อกองไฟในวัดใกล้บ้าน แล้วนิมนต์พระภิกษุสงฆ์มาผิงไฟรับความอบอุ่นด้วย</p>
+
+                <p class="lead">วันเวลาจัดงาน</p>
+                <p>การให้ทานไฟไม่มีกำหนดระยะเวลาที่แน่นอนตายตัวแล้วแต่ความสะดวกในการนัดหมาย แต่ส่วนใหญ่จะปฏิบัติในช่วงเดือนยี่ ซึ่งป็นช่วงที่มีอากาศหนาวเย็นที่สุด ชาวบ้านจะนัดหมายไปพร้อมกันในเวลาย่ำรุ่งหรือตอนเช้ามืด ซึ่งจะเป็นวันไหนก็ได้</p>
+
+                <p class="lead">พิธีกรรม</p>
+                <p>๑. การก่อกองไฟ ชาวบ้านจะเตรียมไม้ฟืน ถ่าน หรือเตาไฟ สำหรับก่อให้เกิดความร้อนและความอบอุ่นแก่พระสงฆ์ บางแห่งนิยมใช้ไม้ฟืนหลายอันมาซ้อนกันเป็นเพิงก่อไฟ แล้วนิมนต์พระสงฆ์มานั่งผิงไฟ เพื่อให้เกิดความอบอุ่นทั้งพระสงฆ์และชาวบ้านที่อยู่ใกล้เคียง
+                ๒. การทำขนมถวายพระ ขนมที่เตรียมไปปรุงที่วัดในการให้ทานไฟเป็นขนมอะไรก็ได้ แต่ส่วนใหญ่จะนิยมขนมที่สามารถปรุงเสร็จในเวลาอันรวดเร็ว ขนมส่วนมากจะปรุงโดยใช้ไฟแรงและเป็นขนมพื้นบ้าน เช่น ขนมเบื้อง ขนมครก ขนมครกข้าวเหนียว ข้าวเกรียบปากหม้อ ขนมโค ขนมพิมพ์ ขนมจาก ขนมจู่จุน ข้าวเหนียวกวนทอด ในปัจจุบันมีขนมและอาหารเพิ่มขึ้นอีกมากมาย เช่น น้ำชา กาแฟ หมี่ผัด ข้าวต้ม ข้าวเหนียวหลาม ขนมปังปิ้ง ชาวบ้านจะปรุงขนมตามที่เตรียมเครื่องปรุงมา แล้วนำขนมที่ปรุงขึ้นมาร้อน ๆ ไปถวายพระสงฆ์ ขณะที่ทำขนมกันไป พระสงฆ์ก็ฉันไปพร้อม ๆ กัน จะหยุดปรุงขนมก็ต่อเมื่อเครื่องปรุงที่เตรียมมาหมด เมื่อพระสงฆ์ฉันอิ่มแล้ว ชาวบ้านจึงร่วมกันรับประทานกันอย่างสนุกสนาน หลังจากพระสงฆ์ฉันเสร็จแล้ว ก็สวดให้ศีลให้พรแก่ผู้ที่มาทำบุญเป็นอันเสร็จพิธี</p>
+
+                <p class="lead">สาระสำคัญของประเพณีนี้</p>
+                <p>๑..เป็นโอกาสหนึ่งที่ได้นัดหมายพร้อมกันในตอนเช้ามืด เพื่อร่วมทำบุญเลี้ยงพระรวมทั้งร่วมรับประทานอาหารกันเป็นที่สนุกสนาน ซึ่งเป็นการสร้างสามัคคีในหมู่คณะได้ดียิ่ง
+                ๒.ทำให้มีสุขภาพดีมีพลานามัยแข็งแรง เพราะการตื่นนอนตอนเช้าตรู่ได้รับอากาศบริสุทธิ์ ทำให้มีความสดชื่นเบิกบาน
+                ๓.เมื่อได้ปฏิบัติตามประเพณีแล้วย่อมทำให้เกิดความสุขใจเบิกบานใจในผลบุญที่ตนได้กระทำ อีกทั้งยังได้เป็นแบบอย่างแก่ลูกหลานของตนด้วย</p>
+
+                <hr />
+
+             </div>
+         </div>
+  </div>
+<!-- /.row -->
+
+
+
+          <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-10">
+            </div>
+        </div>
+    </footer>
+
+    <!-- /.container -->
+
+    <!-- jQuery -->
+      <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+
+  </body>
+
+</html>
