@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+
+  <title>ประเพณีแห่ผ้าขึ้นธาตุ</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link href="../css/modern-business.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin' rel='stylesheet' type='text/css'>
+  <style>
+  @font-face {
+  font-family: 'Kanit', sans-serif;
+  src: url(sansation_light.woff);
+  font-size: '16px';
+  font-weight: bold;
+  }
+
+  div {
+  font-family: 'Kanit', sans-serif;
+  }
+  </style>
+
+  <!-- map -->
+  <link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.13/esri/css/esri.css">
+  <link rel="stylesheet" type="text/css" href="http://esri.github.io/bootstrap-map-js/src/css/bootstrapmap.css">
+  <style type="text/css">
+    #mapDiv {
+      min-height: 100px;
+      max-height: 1000px;
+    }
+  </style>
+</head>
+
+
+  <body>
+
+        <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="../index.html">หน้าหลัก</a>
+                    </li>
+                    <li>
+                        <a href="../history">ข้อมูลทั่วไป</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">สถานที่ท่องเที่ยว <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                              <a href="../kiri">หมู่บ้านคีรีวงศ์</a>
+                          </li>
+                          <li>
+                              <a href="../kwengpow">อ่าวแขวงเภา</a>
+                          </li>
+                          <li>
+                              <a href="../chongruuled">ช่องรูเล็ด</a>
+                          </li>
+                          <li>
+                              <a href="../gohphee">เกาะผี</a>
+                          </li>
+                          <li>
+                              <a href="../gohtarai">เกาะท่าไร่</a>
+                            </li>
+                          <li>
+                              <a href="../hadhinngam">หาดหินงาม</a>
+                          </li>
+                          <li>
+                              <a href="../hadkorkow">หาดคอเขา</a>
+                          </li>
+                          <li>
+                              <a href="../hadnaiprow">หาดในเพลา</a>
+                          </li>
+                           <li>
+                              <a href="../hadnahdan">หาดหน้าด่าน</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">เทศกาล | ประเพณี<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../vuachon">กีฬา วัวชน</a>
+                            </li>
+                            <li>
+                                <a href="../lakpra">ประเภณี ลากพระ</a>
+                            </li>
+                            <li>
+                                <a href="../suddan">ประเภณี สวดด้าน</a>
+                            </li>
+                            <li>
+                                <a href="../hepra">ประเภณีแห่ผ้าขึ้นธาตุ</a>
+                            </li>
+                            <li>
+                                <a href="../sard">วันสารทเดือนสิบ</a>
+                            </li>
+                            <li>
+                                <a href="../haitan">ประเพณีให้ทานไฟ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../hotel">ที่พัก</a>
+                    </li>                    
+                    <li>
+                        <a href="../gallary">แกลลอรี่</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+        <div class="container">
+<!-- Page Heading/Breadcrumbs -->
+  <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">ประเพณีแห่ผ้าขึ้นธาตุ
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="../index.html">หน้าหลัก</a>
+                    </li>
+                    <li class="active">ประเพณีแห่ผ้าขึ้นธาตุ</li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Content Row -->
+        <div class="row">
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-11">
+
+                <!-- Blog Post -->
+
+            <center>  <!-- Preview Image -->
+                <img class="img-responsive img-center" src="/nakhonsri/v1.4/img/fes5.jpg" alt="" />
+            </center>
+
+
+                <hr />
+
+                <!-- Post Content -->
+                <p class="lead">ประเพณีแห่ผ้าขึ้นธาตุ</p>
+                <p class="lead">ความเป็นมา</p>
+                <p>ในสมัยที่พระเจ้าศรีธรรมโศกราชเป็นกษัตริย์ครองตามพรลิงค์(นครศรีธรรมราช) อยู่นั้น ได้มีการบูรณะปฏิสังขรณ์พระบรมธาตุเจดีย์ครั้งใหญ่และแล้วเสร็จในปี พ.ศ.๑๗๗๓ ขณะที่เตรียมสมโภชพระบรมธาตุอยู่นั้น ชาวปากพนังมากราบทูลว่า คลื่นได้ซัดเอาผ้าแถบยาวผืนหนึ่งซึ่งมีภาพเขียนเรื่องพุทธประวัติมาขึ้นที่ชายหาดปากพนัง ชาวปากพนังเก็บผ้านั้นถวายพระเจ้าศรีธรรมโศกราช พระองค์รับสั่งให้ซักผ้านั้นจนสะอาดเห็นภาพวาดพุทธประวัติ เรียกว่า “ ผ้าพระบฏ ” จึงรับสั่งให้ประกาศหาเจ้าของ ได้ความว่าชาวพุทธจากหงสากลุ่มหนึ่ง จะนำผ้าพระบฏไปบูชาพระพุทธบาทที่ลังกา แต่ถูกพายุพัดพามาขึ้นชายฝั่งปากพนัง เหลือผู้รอดชีวิตสิบคนพระเจ้าศรีธรรมโศกราชทรงมีความเห็นว่าควรนำผ้าพระบฏไปห่มพระบรมธาตุเจดีย์ เนื่องในโอกาสสมโภชพระบรมธาตุ แม้จะไม่ใช่พระพุทธบาทตามที่ตั้งใจ แต่ก็เป็นพระบรมสารีริกธาตุซึ่งเจ้าของผ้าพระบฏก็ยินดี การแห่ผ้าขึ้นธาตุจึงมีขึ้นตั้งแต่ปีนั้นและดำเนินการสืบต่อมา จนกลายเป็นประเพณีสำคัญของชาวนครศรีธรรมราชในปัจจุบัน
+
+                ซึ่งประเพณีแห่ผ้าขึ้นธาตุ เป็นประเพณีท้องถิ่นที่มีจัดเพียงแห่งเดียวในประเทศไทย จัดขึ้นในวันมาฆบูชา อันเป็นวันสำคัญทางพระพุทธศาสนา ที่ถือว่าเป็น “ วันจตุรงคสันนิบาต ” คือวันที่พระอรหันต์ซึ่งเป็นเอหิภิกขุ จำนวน ๑ , ๒๕๐ รูป มาประชุมพร้อมกันโดยมิได้นัดหมาย ในวันที่พระจันทร์เสวยมาฆฤกษ์ พุทธศาสนิกชนชาวไทย โดยเฉพาะชาวจังหวัดนครศรีธรรมราช จึงได้พร้อมใจกันประกอบศาสนพิธีในวันนี้ โดยการเวียนเทียนและแห่ผ้าที่เรียกกันว่า “ ผ้าพระบฏ ” เพื่อนำไปห่มองค์พระบรมธาตุเจดีย์ และน้อมรำลึกถึงพระสัมมาสัมพุทธเจ้าเป็นประจำทุกปี</p>
+
+                <p class="lead">วันเวลาจัดงาน และพิธีกรรมุ</p>
+                <p>แต่เดิมการแห่ผ้าขึ้นธาตุนิยมจัดปีละสองครั้ง ในวันขึ้น ๑๕ ค่ำ เดือนสาม ( วันมาฆบูชา) และวันขึ้น ๑๕ ค่ำ เดือนหก (วันวิสาขบูชา) โดยนำผ้าไปห่มองค์พระบรมธาตุเจดีย์ ณ วัดพระมหาธาตุวรมหาวิหาร ปัจจุบันนิยมทำกันในวันขึ้น ๑๕ ค่ำ เดือนสาม (วันมาฆบูชา) มากกว่า</p>
+
+                <p class="lead">สาระสำคัญของประเพณีนี้</p>
+                <p>๑. แสดงให้เห็นลักษณะสังคมของนครศรีธรรมราช ที่ยึดมั่นอยู่ในพระพุทธศาสนาการทำบุญเพื่ออุทิศเป็นพุทธบูชาเพื่อประสงค์ให้ใกล้ชิดกับพระพุทธเจ้า
+                ๒. แสดงให้เห็นว่าองค์พระบรมธาตุเจดีย์ เป็นศูนย์รวมจิตใจ ศูนย์รวมความศรัทธา พุทธศาสนิกชนทั่วไปทุกทิศจึงประสงค์มาห่มผ้าพระธาตุอย่างพร้อมเพรียงกัน</p>
+                
+                <hr />
+
+      </div>
+    </div>
+  </div>
+
+
+
+          <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-10">
+            </div>
+        </div>
+    </footer>
+
+    <!-- /.container -->
+
+    <!-- jQuery -->
+      <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+
+  </body>
+
+</html>

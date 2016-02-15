@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+
+  <title>ข้อมูลทั่วไป</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link href="../css/modern-business.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin' rel='stylesheet' type='text/css'>
+  <style>
+  @font-face {
+  font-family: 'Kanit', sans-serif;
+  src: url(sansation_light.woff);
+  font-size: '16px';
+  font-weight: bold;
+  }
+
+  div {
+  font-family: 'Kanit', sans-serif;
+  }
+  </style>
+
+  <!-- map -->
+  <link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.13/esri/css/esri.css">
+  <link rel="stylesheet" type="text/css" href="http://esri.github.io/bootstrap-map-js/src/css/bootstrapmap.css">
+  <style type="text/css">
+    #mapDiv {
+      min-height: 100px;
+      max-height: 1000px;
+    }
+  </style>
+</head>
+
+
+  <body>
+
+        <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="../index.html">หน้าหลัก</a>
+                    </li>
+                    <li>
+                        <a href="../history">ข้อมูลทั่วไป</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">สถานที่ท่องเที่ยว <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                              <a href="../kiri">หมู่บ้านคีรีวงศ์</a>
+                          </li>
+                          <li>
+                              <a href="../kwengpow">อ่าวแขวงเภา</a>
+                          </li>
+                          <li>
+                              <a href="../chongruuled">ช่องรูเล็ด</a>
+                          </li>
+                          <li>
+                              <a href="../gohphee">เกาะผี</a>
+                          </li>
+                          <li>
+                              <a href="../gohtarai">เกาะท่าไร่</a>
+                            </li>
+                          <li>
+                              <a href="../hadhinngam">หาดหินงาม</a>
+                          </li>
+                          <li>
+                              <a href="../hadkorkow">หาดคอเขา</a>
+                          </li>
+                          <li>
+                              <a href="../hadnaiprow">หาดในเพลา</a>
+                          </li>
+                           <li>
+                              <a href="../hadnahdan">หาดหน้าด่าน</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">เทศกาล | ประเพณี<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../vuachon">กีฬา วัวชน</a>
+                            </li>
+                            <li>
+                                <a href="../lakpra">ประเภณี ลากพระ</a>
+                            </li>
+                            <li>
+                                <a href="../suddan">ประเภณี สวดด้าน</a>
+                            </li>
+                            <li>
+                                <a href="../hepra">ประเภณีแห่ผ้าขึ้นธาตุ</a>
+                            </li>
+                            <li>
+                                <a href="../sard">วันสารทเดือนสิบ</a>
+                            </li>
+                            <li>
+                                <a href="../haitan">ประเพณีให้ทานไฟ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../hotel">ที่พัก</a>
+                    </li>                    
+                    <li>
+                        <a href="../gallary">แกลลอรี่</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+        <div class="container">
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header"> ข้อมูลทั่วไป
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="../index.html">หน้าหลัก</a>
+        </li>
+        <li class="active">ข้อมูลทั่วไป</li>
+      </ol>
+    </div>
+  </div>
+   <div class="row">
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-11">
+
+                <!-- Blog Post -->
+
+              <center>
+                <img class="img-responsive img-center" src="/nakhonsri/v1.4/img/na.png" alt="" />
+              </center>
+
+
+                <hr />
+
+                <!-- Post Content -->
+                <p class="lead">ข้อมูล</p>
+                <p>จังหวัดนครศรีธรรมราช (มักเรียกสั้น ๆ ว่า นคร) เป็นจังหวัดในประเทศไทย ที่มีขนาดใหญ่เป็นอันดับ 2 ของภาคใต้ (รองจากสุราษฎร์ธานี) ห่างจากกรุงเทพฯ ประมาณ 780 กิโลเมตร จังหวัดที่อยู่ติดกัน (จากทิศใต้ วนตามเข็มนาฬิกา) ได้แก่ สงขลา พัทลุง ตรัง กระบี่ และสุราษฎร์ธานี
+
+ในอดีตมีชื่อเรียกดินแดนแถบนี้หลายชื่อ ที่ตะวันตกนิยมเรียกกันมาจนกระทั่งต้นคริสต์ศตวรรษที่ 20 คือ "ลิกอร์" สันนิษฐานว่าชาวโปรตุเกสที่เข้ามาติดต่อค้าขายในสมัยกรุงศรีอยุธยาตอนต้นเป็นผู้เรียกก่อน โดยเพี้ยนมาจากคำว่า "นคร" ส่วนชื่อ "นครศรีธรรมราช" มาจากพระนามของกษัตริย์ผู้ครองนครในอดีต ทรงมีพระนามว่า "พระเจ้าศรีธรรมาโศกราช" (ราชวงศ์ศรีธรรมาโศกราช) มีความหมายว่า "นครอันเป็นสง่าแห่งพระราชาผู้ทรงธรรม" หรือ "เมืองแห่งพุทธธรรมของพระราชาผู้ยิ่งใหญ่"
+
+ในสมัยกรุงศรีอยุธยาเป็นราชธานี เมืองนครศรีธรรมราชมีฐานะเป็นเมืองชั้นเอกคู่กับเมืองพิษณุโลก มีขุนนางชั้นผู้ใหญ่ระดับเจ้าพระยาเป็นเจ้าเมือง มีบรรดาศักดิ์ตามพระไอยการตำแหน่งนาพลเรือน นาทหารหัวเมือง ว่า เจ้าพระยาศรีธรรมราชชาติเดโชไชยมไหยสุริยาธิบดีอภัยพิรียบรากรมภาหุ
+
+<p class="lead">ประวัติศาสตร์</p>
+
+เมื่อเสียกรุงศรีอยุธยาครั้งที่ 2 ใน ปี พ.ศ. 2310 ตำแหน่งเจ้าพระยานครศรีธรรมราชว่างอยู่ หลวงสิทธนายเวรมหาดเล็ก (หนู) ซึ่งออกไปรับราชการตำแหน่งปลัดเมืองเป็นผู้รักษาราชการเมืองนครศรีธรรมราช ครั้นทราบว่ากรุงศรีอยุธยาเสียแก่พม่า ไม่มีเจ้านายปกครองประเทศ หลวงสิทธิจึงตั้งตัวเป็นเจ้าผู้ครองเมืองนครศรีธรรมราชเป็นอิสระอยู่ก๊กหนึ่ง ในปี พ.ศ. 2312 พระเจ้ากรุงธนบุรีทรงยกกองทัพไปปราบ จับตัวเจ้านครได้ และมีพระราชดำริว่าเจ้านครมิได้มีใจกบฏคิดร้ายต่อประเทศ แต่ตั้งตัวขึ้นเนื่องจากบ้านเมืองเป็นจลาจล จึงโปรดเกล้าฯ ให้มารับราชการอยู่ที่กรุงธนบุรี และให้เจ้านราสุริยวงศ์หลานเธอออกไปครองเมืองนครศรีธรรมราช ต่อมาเจ้านราสุริยวงศ์ถึงแก่พิราลัย พระเจ้ากรุงธนบุรีมีพระราชดำริว่า เจ้านครได้เข้ามารับราชการมีความจงรักภักดีและได้ถวายธิดาทำราชการมีราชบุตร (คือพระพงษ์นรินทรและพระอินทร์อภัย) เป็นที่ไว้วางพระราชหฤทัยเป็นอย่างยิ่ง จึงโปรดเกล้าฯ ให้เจ้านครออกไปครองเมืองนครศรีธรรมราช และสถาปนาขึ้นเป็น พระเจ้านครศรีธรรมราช เจ้าขันธสีมา เมื่อวันอาทิตย์ เดือน 11 ขึ้น 3 ค่ำ จุลศักราช 1138(พ.ศ. 2319) ปีวอกอัฐศก
+
+ต่อมา พระบาทสมเด็จพระพุทธยอดฟ้าจุฬาโลก (รัชกาลที่ 1) มีพระราชดำริว่า พระเจ้านครศรีธรรมราชมีความชราทุพพลภาพ ไม่สามารถปกครองบ้านเมืองได้ จึงโปรดให้ออกจากตำแหน่ง กลับเข้ามาอยู่ในกรุงเทพฯ และโปรดให้เจ้าอุปราช (พัฒน์) บุตรเขยเจ้านคร ขึ้นเป็นผู้สำเร็จราชการเมืองนครศรีธรรมราช เมื่อวันอังคาร เดือน 8 แรม 11 ค่ำ จุลศักราช 1146 (พ.ศ. 2327) ปีมะโรงศก แต่โปรดให้มียศเพียงเจ้าพระยาตามประเพณีแต่เดิมเมื่อครั้งกรุงศรีอยุธยาเป็นราชธานี เมืองนครศรีธรรมราชจึงเป็นเมืองที่เคยมีกษัตริย์ปกครอง และมีฐานะเป็นประเทศราช 8 ปี
+
+มีเกร็ดย่อยคือ เจ้าพระยานครศรีธรรมราช (พัฒน์) รับราชการจนถึงสมัยพระบาทสมเด็จพระพุทธเลิศหล้านภาลัย (รัชกาลที่ 2) มีความชราภาพ จึงทรงยกขึ้นเป็น เจ้าพระยาสุธรรมมนตรี ตำแหน่งกิตติมศักดิ์ และทรงตั้งพระบริรักษ์ภูเบศร์ (น้อย) บุตรเจ้าพระยานคร (พัฒน์) เป็นเจ้าพระยานครศรีธรรมราชคนใหม่ แต่มีเรื่องปรากฏหลักฐานในสมัยนั้นว่า เจ้าพระยานคร (น้อย) นี้ที่จริงเป็นราชบุตรลับของพระเจ้ากรุงธนบุรี เนื่องจากเมื่อครั้งเจ้านครทำราชการอยู่ที่กรุงธนบุรี และถวายธิดาทำราชการฝ่ายในแก่พระเจ้ากรุงธนบุรี และมีน้องสาวมาอยู่ด้วยในวังคนหนึ่ง ความปรากฏตามพงศาวดารว่า เจ้าพระยาพิชัยราชา เจ้าเมืองสวรรคโลกให้ไปขอ เมื่อพระเจ้ากรุงธนบุรีทรงทราบก็ทรงพระพิโรธ ว่าเจ้าพระยาพิชัยราชาบังอาจจะเป็นคู่เขยของพระองค์ ให้เอาไปประหารเสีย ต่อมาวงศ์ญาติเจ้านครจึงนำธิดาคนนี้ถวายพระเจ้ากรุงธนบุรีเสีย ต่อมาเจ้าพระยานคร (พัฒน์) เมื่อครั้งยังเป็นอุปราชเมืองนครอยู่ ภริยาซึ่งเป็นบุตรเจ้านครเสียชีวิต เจ้าพระยานคร (พัฒน์) ทำความชอบได้เข้าเฝ้าครั้งหนึ่ง พระเจ้ากรุงธนบุรีเห็นว่าภริยาเสียชีวิตก็สงสารจึงจะพระราชทานธิดาเจ้านครให้ใหม่ และให้นำตัวธิดาคนเล็กเจ้านครไปพระราชทาน แต่นางในกระซิบว่า ดูเหมือนว่านางจะขาดระดูอยู่ แต่พระเจ้ากรุงธนตรัสว่า "ได้ออกปากให้เขาแล้ว ก็พาไปเถอะ" เมื่อท้าวนางพาธิดาเจ้านครไปส่งนั้น เจ้าอุปราช (พัฒน์) ก็ทราบความลับนั้น มีความยำเกรงพระบารมีก็ต้องรับไว้เป็นท่านผู้หญิงกิตติมศักดิ์อยู่ตลอดอายุ และนางนั้นก็มีบุตรกับเจ้าพระยานคร (พัฒน์) เพียงคนเดียว คือ เจ้าพระยานคร (น้อย) คนต่อมา คือ ปริก</p>
+
+                <hr />
+
+      </div>
+</div>
+</div>
+
+
+          <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-10">
+            </div>
+        </div>
+    </footer>
+
+    <!-- /.container -->
+
+    <!-- jQuery -->
+      <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+
+  </body>
+
+</html>
